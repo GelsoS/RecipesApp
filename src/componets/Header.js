@@ -32,7 +32,6 @@ function Header({ title }) {
             <img src={ searchIcon } alt="Ícone de pesquisa" />
           </button>
           {searchBtn && <SearchBar />}
-
         </div>)}
       <h1 data-testid="page-title">{title}</h1>
     </header>
