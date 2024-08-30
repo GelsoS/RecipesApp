@@ -4,11 +4,12 @@ import { Link } from 'react-router-dom';
 import profileIcon from '../images/profileIcon.svg';
 import searchIcon from '../images/searchIcon.svg';
 import SearchBar from './SearchBar';
+import './css/header.css';
 
 function Header({ title }) {
   const [searchBtn, setSearchBtn] = useState(false);
   return (
-    <header>
+    <header className="foods">
       <Link to="/profile">
         <img
           data-testid="profile-top-btn"
@@ -20,7 +21,7 @@ function Header({ title }) {
       && title !== 'Done Recipes'
       && title !== 'Favorite Recipes')
       && (
-        <div>
+        <div className="foodsBar">
           <button
             type="button"
             src={ searchIcon }

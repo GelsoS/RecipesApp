@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
+import './css/login.css';
 
 function Login() {
   const [email, setEmail] = useState('');
@@ -22,7 +23,7 @@ function Login() {
   const setcocktailsToken = () => localStorage.setItem('cocktailsToken', 1);
 
   return (
-    <section>
+    <section className="login">
       <label htmlFor="inputEmail">
         email
         <input

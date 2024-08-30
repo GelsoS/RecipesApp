@@ -6,6 +6,7 @@ import getByCategorie from '../api/getByCategorie';
 
 import recipeContext from '../contex/recipeContext';
 import getInitialRecipes from '../api/getInitialRecipes';
+import './css/categories.css';
 
 function Categories() {
   const history = useHistory();
@@ -52,6 +53,7 @@ function Categories() {
     return (
       categories.slice(0, lastItem).map((c) => (
         <button
+          className="buttonCategorie"
           type="button"
           key={ c.strCategory }
           data-testid={ `${c.strCategory}-category-filter` }
@@ -65,7 +67,7 @@ function Categories() {
   };
 
   return (
-    <div>
+    <div className="categories">
       <button
         type="button"
         onClick={ () => handleAllButton() }

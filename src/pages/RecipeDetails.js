@@ -7,6 +7,7 @@ import whiteHeartIcon from '../images/whiteHeartIcon.svg';
 import blackHeartIcon from '../images/blackHeartIcon.svg';
 import { drinks, foods, recomenBebidas, recomenComidas } from '../api/foods';
 import { doneRecipes } from '../helpers/functions';
+import './css/progress.css';
 
 function RecipeDetails({ match }) {
   const {
@@ -133,7 +134,7 @@ function RecipeDetails({ match }) {
     }
   }
   return (
-    <div>
+    <div className="recipesView">
       {receitaFood.map((a, i) => (
         <div key={ i }>
           <img

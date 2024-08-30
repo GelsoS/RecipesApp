@@ -1,0 +1,36 @@
+/* Estilo para o contêiner dos cartões */
+.container {
+  display: flex; /* Define o layout como flexível */
+  flex-wrap: wrap; /* Permite que os cartões quebrem para a linha seguinte se não houver espaço suficiente */
+  gap: 20px; /* Espaçamento entre os cartões */
+  padding: 20px; /* Preenchimento interno do contêiner */
+}
+
+/* Estilo para os cartões de receita */
+.container a {
+  display: block; /* Faz o link ocupar o espaço do cartão */
+  width: 250px; /* Define a largura dos cartões */
+  border: 1px solid #ddd; /* Borda dos cartões */
+  border-radius: 8px; /* Cantos arredondados dos cartões */
+  overflow: hidden; /* Garante que o conteúdo não ultrapasse os limites do cartão */
+  background-color: #fff; /* Cor de fundo dos cartões */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil ao redor do cartão */
+  transition: transform 0.3s, box-shadow 0.3s; /* Transição suave para transformação e sombra */
+}
+
+.container img {
+  width: 100%; /* Faz a imagem preencher a largura do cartão */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+.container h3 {
+  margin: 10px; /* Margem ao redor do título */
+  font-size: 18px; /* Tamanho da fonte do título */
+  text-align: center; /* Alinha o texto ao centro */
+}
+
+/* Estilo para o cartão ao passar o mouse */
+.container a:hover {
+  transform: scale(1.05); /* Aumenta ligeiramente o cartão */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra mais forte ao passar o mouse */
+}

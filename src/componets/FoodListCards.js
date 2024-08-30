@@ -74,7 +74,7 @@ export default function FoodListCards(props) {
           { type === 'done' && (
             <p data-testid={ `${index}-horizontal-done-date` }>{ recipe.doneDate}</p>
           )}
-          { type === 'done' && recipe.tags !== [] && recipe.tags.map((c) => (
+          { type === 'done' && recipe.tags.map((c) => (
             <li key={ c } data-testid={ `${index}-${c}-horizontal-tag` }>{ c }</li>
           ))}
           <div className="w-100 d-flex justify-content-around">

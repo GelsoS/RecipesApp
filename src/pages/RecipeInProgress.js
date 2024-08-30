@@ -134,7 +134,7 @@ function RecipeInProgress({ match }) {
   }
 
   return (
-    <div>
+    <div className="recipesView">
       { receitaFood.map((a, i) => (
         <div key={ i }>
           <img

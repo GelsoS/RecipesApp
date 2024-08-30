@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 import recipeContext from '../contex/recipeContext';
+import './css/recipecards.css';
 
 function RecipeCards() {
   const { location: { pathname } } = useHistory();
@@ -31,7 +32,7 @@ function RecipeCards() {
     return (cards);
   };
   return (
-    <div>
+    <div className="container">
       { renderCards() }
     </div>
   );

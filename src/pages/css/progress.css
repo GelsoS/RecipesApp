@@ -1,0 +1,131 @@
+/* Estilo para a visualização de receitas */
+.recipesView {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Estilo para cada receita individual */
+.recipesView > div {
+  border: 1px solid #ddd; /* Borda ao redor de cada receita */
+  border-radius: 8px; /* Cantos arredondados */
+  overflow: hidden; /* Garante que o conteúdo não ultrapasse os limites */
+  margin-bottom: 20px; /* Espaçamento inferior entre receitas */
+  padding: 20px; /* Preenchimento interno */
+  width: 100%; /* Largura total do contêiner pai */
+  max-width: 600px; /* Largura máxima das receitas */
+  background-color: #fff; /* Cor de fundo branca */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil ao redor */
+}
+
+/* Estilo para as imagens das receitas */
+.recipesView img {
+  width: 100%; /* Faz com que a imagem preencha a largura do contêiner */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 8px; /* Cantos arredondados da imagem */
+}
+
+/* Estilo para os botões de compartilhamento e favoritos */
+.recipesView button {
+  background: none; /* Remove o fundo dos botões */
+  border: none; /* Remove a borda dos botões */
+  cursor: pointer; /* Cursor de ponteiro ao passar sobre os botões */
+  margin: 5px; /* Margem ao redor dos botões */
+}
+
+/* Estilo para o botão de compartilhamento */
+.recipesView .share-btn img {
+  width: 24px; /* Largura da imagem do botão de compartilhamento */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Estilo para o botão de favoritos */
+.recipesView .favorite-btn img {
+  width: 24px; /* Largura da imagem do botão de favoritos */
+  height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Estilo para o título da receita */
+.recipesView h4 {
+  font-size: 1.5rem; /* Tamanho da fonte */
+  margin: 10px 0; /* Margem acima e abaixo do título */
+}
+
+/* Estilo para a categoria da receita */
+.recipesView p[data-testid="recipe-category"] {
+  font-style: italic; /* Estilo itálico para a categoria */
+  color: #666; /* Cor do texto */
+  margin: 5px 0; /* Margem acima e abaixo da categoria */
+}
+
+/* Estilo para a lista de ingredientes */
+.recipesView ol {
+  margin: 10px 0; /* Margem acima e abaixo da lista */
+  padding-left: 20px; /* Preenchimento à esquerda da lista */
+}
+
+/* Estilo para cada item da lista de ingredientes */
+.recipesView li {
+  margin-bottom: 5px; /* Espaçamento inferior entre itens */
+}
+
+/* Estilo para as instruções da receita */
+.recipesView p[data-testid="instructions"] {
+  margin: 10px 0; /* Margem acima e abaixo das instruções */
+  line-height: 1.5; /* Altura da linha para melhor legibilidade */
+}
+
+/* Estilo para o vídeo incorporado */
+.recipesView iframe {
+  margin: 20px 0; /* Margem acima e abaixo do vídeo */
+  border: none; /* Remove a borda do vídeo */
+  border-radius: 8px; /* Cantos arredondados do vídeo */
+}
+
+/* Estilo para a seção de recomendações */
+.recommendations {
+  width: 100%;
+  overflow-x: auto; /* Permite rolagem horizontal */
+  display: flex; /* Exibe os itens em linha */
+  gap: 20px; /* Espaçamento entre itens */
+  padding: 10px; /* Preenchimento interno */
+}
+
+/* Estilo para cada item de recomendação */
+.recommendations div {
+  display: flex; /* Exibe imagem e título em coluna */
+  flex-direction: column; /* Alinha os itens verticalmente */
+  align-items: center; /* Centraliza os itens horizontalmente */
+  min-width: 150px; /* Largura mínima dos itens */
+  margin: 0 10px; /* Margem lateral entre itens */
+}
+
+/* Estilo para as imagens das recomendações */
+.recommendations img {
+  width: 100px; /* Largura das imagens */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 8px; /* Cantos arredondados das imagens */
+}
+
+/* Estilo para o botão de iniciar/continuar receita */
+.recipesView .start-recipe-btn {
+  position: fixed; /* Posiciona o botão de forma fixa na parte inferior da tela */
+  bottom: 20px; /* Distância da parte inferior da tela */
+  left: 50%; /* Alinha horizontalmente ao centro */
+  transform: translateX(-50%); /* Ajusta o botão para o centro exato */
+  padding: 10px 20px; /* Preenchimento interno do botão */
+  font-size: 1rem; /* Tamanho da fonte */
+  color: #fff; /* Cor do texto */
+  background-color: #007bff; /* Cor de fundo do botão */
+  border: none; /* Remove a borda do botão */
+  border-radius: 8px; /* Cantos arredondados do botão */
+  cursor: pointer; /* Cursor de ponteiro ao passar sobre o botão */
+  transition: background-color 0.3s, transform 0.3s; /* Transições suaves */
+}
+
+/* Estilo para o botão de iniciar/continuar receita ao passar o mouse */
+.recipesView .start-recipe-btn:hover {
+  background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+  transform: translateX(-50%) scale(1.05); /* Aumenta ligeiramente o botão */
+}

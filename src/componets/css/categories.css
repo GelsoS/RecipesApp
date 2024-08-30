@@ -1,0 +1,43 @@
+/* Estilo geral para o contêiner de categorias */
+div.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Espaçamento entre os botões */
+  padding: 10px;
+  justify-content: center; /* Centraliza os botões horizontalmente */
+  background-color: #f8f9fa; /* Cor de fundo clara */
+}
+
+/* Estilo para os botões de categoria */
+button.buttonCategorie,
+button[type="button"] {
+  background-color: #ff9100; /* Cor de fundo do botão */
+  color: #fff; /* Cor do texto */
+  border: none; /* Remove a borda padrão do botão */
+  border-radius: 5px; /* Cantos arredondados */
+  padding: 10px 20px; /* Preenchimento interno do botão */
+  font-size: 14px; /* Tamanho da fonte */
+  cursor: pointer; /* Cursor de ponteiro ao passar sobre o botão */
+  transition: background-color 0.3s, transform 0.3s; /* Transição suave para cor e efeito de transformação */
+}
+
+/* Estilo para o botão quando estiver em foco ou sendo clicado */
+button.buttonCategorie:focus,
+button.buttonCategorie:hover {
+  background-color: #0056b3; /* Cor de fundo do botão ao passar o mouse */
+  outline: none; /* Remove a borda de foco padrão */
+  transform: scale(1.05); /* Aumenta ligeiramente o botão */
+}
+
+/* Estilo para o botão "All" */
+div.categories button[type="button"] {
+  background-color: #6c757d; /* Cor de fundo do botão "All" */
+  color: #fff; /* Cor do texto */
+  font-weight: bold; /* Fonte em negrito */
+}
+
+/* Estilo para o botão "All" quando estiver em foco ou sendo clicado */
+div.categories button[type="button"]:focus,
+div.categories button[type="button"]:hover {
+  background-color: #5a6268; /* Cor de fundo do botão "All" ao passar o mouse */
+}

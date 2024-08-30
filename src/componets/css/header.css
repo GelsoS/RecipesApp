@@ -1,0 +1,66 @@
+/* Estilo geral para o header */
+header.foods {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para o link com o ícone do perfil */
+header.foods a {
+  display: flex;
+  align-items: center;
+}
+
+/* Estilo para o ícone do perfil */
+header.foods img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Estilo para a barra de pesquisa */
+header.foods .foodsBar {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* Estilo para o botão de pesquisa */
+header.foods .foodsBar button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+/* Estilo para o ícone de pesquisa */
+header.foods .foodsBar button img {
+  width: 25px;
+  height: 25px;
+}
+
+/* Estilo para o título da página */
+header.foods h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* Estilo para a SearchBar (supondo que você tenha uma classe para ela) */
+header.foods .SearchBar {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  width: 200px; /* Ajuste conforme necessário */
+}
