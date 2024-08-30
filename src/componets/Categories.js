@@ -78,9 +78,6 @@ function Categories() {
       </button>
       { renderCategories() }
     </div>
-    // <label htmlFor="">
-    //   <input type="radio" />
-    // </label>
   );
 }
 
