@@ -225,6 +225,7 @@ function RecipeDetails({ match }) {
     </div>
   );
 }
+
 RecipeDetails.propTypes = {
   match: PropTypes.shape({
     url: PropTypes.string,
